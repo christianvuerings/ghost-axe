@@ -1,5 +1,7 @@
 # ghost-axe
 
+[![npm version](https://badge.fury.io/js/ghost-axe.svg)](https://badge.fury.io/js/ghost-axe)
+
 Test helper methods when using [ghostjs](https://github.com/KevinGrandon/ghostjs) & [aXe](https://github.com/dequelabs/axe-core)
 
 ## Example usage
