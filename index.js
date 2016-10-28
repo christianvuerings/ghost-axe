@@ -5,21 +5,20 @@ class GhostAxe {
     this.ghost = null;
   }
 
-  setGhost(ghost) {
-    this.ghost = ghost;
-  }
-
   getGhost() {
     if (!this.ghost) {
-      throw new Error("Please set your ghost instance with 'GhostAxe.setGhost'");
+      throw new Error("Please set your ghost instance with 'GhostAxe.init'");
     }
     return this.ghost;
   }
 
   /**
-   * Load the axe-core Accessibility library inside of ghost.js
+   * Initialize the ghostAxe library with the ghost instance
+   * also injects the axe-core accessibility library
    */
-  async loadAxe() {
+  async init(ghost) {
+    this.ghost = ghost;
+
     await this.getGhost().injectScripts('node_modules/axe-core/axe.js');
   }
 

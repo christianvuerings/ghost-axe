@@ -10,8 +10,7 @@ import ghost from 'ghostjs';
 import ghostAxe from 'ghost-axe';
 
 const initGhostAxe = async () => {
-  await ghostAxe.setGhost(ghost);
-  await ghostAxe.loadAxe();
+  await ghostAxe.init(ghost);
 };
 
 describe('Icon > a11y', () => {
