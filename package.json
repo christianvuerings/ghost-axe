@@ -1,0 +1,27 @@
+{
+  "name": "ghost-axe",
+  "version": "0.0.1",
+  "description": "Test helper methods when using ghostjs & aXe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Ghostjs",
+    "axe-core",
+    "testing",
+    "a11y"
+  ],
+  "author": "Christian Vuerings",
+  "license": "MIT",
+  "dependencies": {
+    "axe-core": "^2.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb": "^12.0.0",
+    "eslint-plugin-import": "^1.16.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.4.1"
+  }
+}
