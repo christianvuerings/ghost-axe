@@ -27,7 +27,7 @@ class GhostAxe {
    */
   async getResults() {
     await this.getGhost().script(() => {
-      window.axe.a11yCheck(document, (results) => {
+      window.axe.run((err, results) => {
         window.A11YRESULTS = results;
       });
     });
